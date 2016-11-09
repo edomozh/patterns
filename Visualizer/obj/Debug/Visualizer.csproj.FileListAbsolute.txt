@@ -1,0 +1,11 @@
+D:\DeadUser.Patterns\Visualizer\bin\Debug\Visualizer.exe.config
+D:\DeadUser.Patterns\Visualizer\bin\Debug\Visualizer.exe
+D:\DeadUser.Patterns\Visualizer\bin\Debug\Visualizer.pdb
+D:\DeadUser.Patterns\Visualizer\bin\Debug\DeadUser.Patterns.dll
+D:\DeadUser.Patterns\Visualizer\bin\Debug\DeadUser.Patterns.pdb
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.csprojResolveAssemblyReference.cache
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.Visualizer.resources
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.Properties.Resources.resources
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.csproj.GenerateResource.Cache
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.exe
+D:\DeadUser.Patterns\Visualizer\obj\Debug\Visualizer.pdb

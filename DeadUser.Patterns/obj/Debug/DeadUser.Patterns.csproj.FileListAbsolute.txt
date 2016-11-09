@@ -1,0 +1,5 @@
+D:\DeadUser.Patterns\DeadUser.Patterns\bin\Debug\DeadUser.Patterns.dll
+D:\DeadUser.Patterns\DeadUser.Patterns\bin\Debug\DeadUser.Patterns.pdb
+D:\DeadUser.Patterns\DeadUser.Patterns\obj\Debug\DeadUser.Patterns.csprojResolveAssemblyReference.cache
+D:\DeadUser.Patterns\DeadUser.Patterns\obj\Debug\DeadUser.Patterns.dll
+D:\DeadUser.Patterns\DeadUser.Patterns\obj\Debug\DeadUser.Patterns.pdb

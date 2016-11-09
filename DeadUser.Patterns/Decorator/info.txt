@@ -1,0 +1,3 @@
+﻿In this library will be realized class Warrior.
+Warrior mast have skill chenge yourself type.
+For example be Knight (on a horse) or Swordsman.

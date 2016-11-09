@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Decorator\Decorator.csproj">
-      <Project>{b863355c-2803-4aaf-afb0-d9ede6cfa748}</Project>
-      <Name>Decorator</Name>
+    <ProjectReference Include="..\DeadUser.Patterns\DeadUser.Patterns.csproj">
+      <Project>{ebbafb9a-327e-4b8f-866c-7b096b083fa1}</Project>
+      <Name>DeadUser.Patterns</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

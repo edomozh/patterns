@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B863355C-2803-4AAF-AFB0-D9EDE6CFA748}</ProjectGuid>
+    <ProjectGuid>{EBBAFB9A-327E-4B8F-866C-7B096B083FA1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Decorator</RootNamespace>
-    <AssemblyName>Decorator</AssemblyName>
+    <RootNamespace>DeadUser.Patterns</RootNamespace>
+    <AssemblyName>DeadUser.Patterns</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Warrior.cs" />
+    <Compile Include="Decorator\Knight.cs" />
+    <Compile Include="Decorator\Swordsman.cs" />
+    <Compile Include="Decorator\Warrior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Description\Info.txt" />
+    <Content Include="Decorator\info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
