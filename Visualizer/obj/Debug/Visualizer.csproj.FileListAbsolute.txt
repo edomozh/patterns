@@ -1,1 +1,0 @@
-D:\Patterns\Visualizer\bin\Debug\Visualizer.exe.config
