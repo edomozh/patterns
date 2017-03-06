@@ -1,0 +1,8 @@
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Adapter\bin\Debug\Adapter.exe.config
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Adapter\bin\Debug\Adapter.exe
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Adapter\bin\Debug\Adapter.pdb
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Adapter\obj\Debug\Adapter.exe
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Adapter\obj\Debug\Adapter.pdb
+D:\Patterns\Adapter\bin\Debug\Adapter.exe.config
+D:\Patterns\Adapter\obj\Debug\Adapter.exe
+D:\Patterns\Adapter\obj\Debug\Adapter.pdb
