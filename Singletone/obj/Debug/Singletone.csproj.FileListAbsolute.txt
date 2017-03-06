@@ -4,3 +4,6 @@ D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Singletone\bin\Debug\S
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Singletone\obj\Debug\Singletone.csprojResolveAssemblyReference.cache
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Singletone\obj\Debug\Singletone.exe
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\Singletone\obj\Debug\Singletone.pdb
+D:\Patterns\Singletone\bin\Debug\Singletone.exe.config
+D:\Patterns\Singletone\obj\Debug\Singletone.exe
+D:\Patterns\Singletone\obj\Debug\Singletone.pdb

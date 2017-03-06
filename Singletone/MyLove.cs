@@ -1,10 +1,9 @@
-﻿namespace Patterns.Singleton
+﻿namespace Singletone
 {
-	using System.Data.Common;
 	using System.Drawing;
 
 	/// <summary>
-	/// класс премьер-министра.
+	/// Класс девушки.
 	/// </summary>
 	public class MyGirl
 	{

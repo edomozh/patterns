@@ -1,4 +1,4 @@
-﻿namespace Patterns.AbstractFactory
+﻿namespace AbstractFactory
 {
 	/// <summary>
 	/// Фабрика создания наркомана.

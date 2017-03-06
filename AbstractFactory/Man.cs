@@ -1,4 +1,4 @@
-﻿namespace Patterns.AbstractFactory
+﻿namespace AbstractFactory
 {
 	using System;
 
@@ -20,6 +20,7 @@
 		/// Конструктор, присваивающий значения полям напитков, курева и тонуса.
 		/// </summary>
 		/// <param name="manFactory">Экземпляр дочерного класса IManFactory</param>
+		/// <param name="tonus">Жизненная сила.</param>
 		public Man(IManFactory manFactory, int tonus)
 		{
 			
