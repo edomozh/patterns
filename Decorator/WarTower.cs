@@ -1,6 +1,5 @@
 ﻿namespace Decorator
 {
-	using System;
 	using System.Drawing;
 
 	/// <summary>
@@ -9,7 +8,6 @@
 	public class WarTower
 	{
 		protected Tower Tower;
-
 
 		public WarTower()
 		{
