@@ -1,18 +1,35 @@
 ﻿namespace Mediator
 {
+	/// <summary>
+	/// Объект игровой системмы.
+	/// </summary>
 	abstract class GameObject
 	{
-		protected IMediator mediator;
+		/// <summary>
+		/// Посредник.
+		/// </summary>
+		protected IMediator Mediator;
 
+		/// <summary>
+		/// При инициализации указывается посредник.
+		/// </summary>
 		public GameObject(IMediator mediator)
 		{
-			this.mediator = mediator;
+			this.Mediator = mediator;
 		}
 
+		/// <summary>
+		/// Перенаправление сообщения с помощью посредника.
+		/// </summary>
 		public virtual void Send(string message)
 		{
-			mediator.Send(message, this);
+			Mediator.Send(message, this);
 		}
+
+		/// <summary>
+		/// Обработка входящего уведомления.
+		/// </summary>
+		/// <param name="message"></param>
 		public abstract void Notify(string message);
 	}
 }
