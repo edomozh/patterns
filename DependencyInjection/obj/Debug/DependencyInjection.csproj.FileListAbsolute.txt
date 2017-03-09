@@ -1,0 +1,1 @@
+D:\Patterns\DependencyInjection\bin\Debug\DependencyInjection.exe.config
