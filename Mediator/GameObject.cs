@@ -1,14 +1,18 @@
 ﻿namespace Mediator
 {
-	internal abstract class GameObject
+	abstract class GameObject
 	{
-		public readonly IManager Manager;
+		protected IMediator mediator;
 
-		public GameObject(IManager manager)
+		public GameObject(IMediator mediator)
 		{
-			Manager = manager;
+			this.mediator = mediator;
 		}
 
-		internal abstract string Notify(string msg);
+		public virtual void Send(string message)
+		{
+			mediator.Send(message, this);
+		}
+		public abstract void Notify(string message);
 	}
 }

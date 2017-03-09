@@ -1,10 +1,14 @@
 ﻿namespace Mediator
 {
-	internal class User : GameObject
+	using System;
+
+	class User : GameObject
 	{
-		public User(IManager manager) : base(manager)
+		public User(IMediator mediator) : base(mediator) { }
+
+		public override void Notify(string message)
 		{
-			manager.User = this;
+			Console.WriteLine("Пользователь, " + message);
 		}
 	}
 }
