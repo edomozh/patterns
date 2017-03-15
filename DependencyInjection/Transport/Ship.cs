@@ -5,15 +5,15 @@
 	/// <summary>
 	/// Лодка.
 	/// </summary>
-	internal class Boot : ITransport
+	internal class Ship : ITransport
 	{
 		/// <summary>
 		/// Передвигаться.
 		/// </summary>
-		/// <param name="text"></param>
-		public void Go(string text)
+		public void Carry(IHuman human, City city)
 		{
-			Console.WriteLine($"{text} плыть");
+			Console.WriteLine("Поплыли.");
+			human.City = city;
 		}
 	}
 }

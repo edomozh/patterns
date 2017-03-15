@@ -4,3 +4,9 @@ D:\Patterns\DependencyInjection\bin\Debug\DependencyInjection.pdb
 D:\Patterns\DependencyInjection\obj\Debug\DependencyInjection.csprojResolveAssemblyReference.cache
 D:\Patterns\DependencyInjection\obj\Debug\DependencyInjection.exe
 D:\Patterns\DependencyInjection\obj\Debug\DependencyInjection.pdb
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\bin\Debug\DependencyInjection.exe.config
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\obj\Debug\DependencyInjection.exe
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\obj\Debug\DependencyInjection.pdb
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\bin\Debug\DependencyInjection.exe
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\bin\Debug\DependencyInjection.pdb
+D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\obj\Debug\DependencyInjection.csprojResolveAssemblyReference.cache

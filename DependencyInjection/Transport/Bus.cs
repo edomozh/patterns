@@ -5,15 +5,15 @@
 	/// <summary>
 	/// Автомобиль.
 	/// </summary>
-	internal class Car : ITransport
+	internal class Bus : ITransport
 	{
 		/// <summary>
 		/// Передвигаться.
 		/// </summary>
-		public void Go(string text)
+		public void Carry(IHuman human, City city)
 		{
-
-			Console.WriteLine($"{text} ехать");
+			Console.WriteLine("Поехали.");
+			human.City = city;
 		}
 	}
 }

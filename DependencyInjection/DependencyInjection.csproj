@@ -12,6 +12,10 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +39,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,16 +48,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Traveler.cs" />
-    <Compile Include="Boot.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="ITransport.cs" />
+    <Compile Include="Environment\Airport.cs" />
+    <Compile Include="Environment\City.cs" />
+    <Compile Include="Environment\Station.cs" />
+    <Compile Include="Environment\ICityMap.cs" />
+    <Compile Include="Environment\CommonCityMap.cs" />
+    <Compile Include="Environment\Port.cs" />
+    <Compile Include="Environment\RailwaySstation.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="Ticket\Ticket.cs" />
+    <Compile Include="Transport\ITransportFactory.cs" />
+    <Compile Include="Unit\IHuman.cs" />
+    <Compile Include="Unit\Man.cs" />
+    <Compile Include="Ticket\ITicket.cs" />
+    <Compile Include="Ticket\ITicketFactory.cs" />
+    <Compile Include="Ticket\TicketWindow.cs" />
+    <Compile Include="Transport\Сamp.cs" />
+    <Compile Include="Transport\Airplane.cs" />
+    <Compile Include="Transport\Train.cs" />
+    <Compile Include="Transport\Ship.cs" />
+    <Compile Include="Transport\Bus.cs" />
+    <Compile Include="Transport\ITransport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,7 +8,6 @@ namespace DependencyInjection
 		/// <summary>
 		/// Передвигаться.
 		/// </summary>
-		/// <param name="text"></param>
-		void Go(string text);
+		void Carry(IHuman human, City city);
 	}
 }
