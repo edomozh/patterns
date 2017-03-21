@@ -3,5 +3,5 @@
 	/// <summary>
 	/// Железнодорожная станция.
 	/// </summary>
-	internal class RailwaySstation : Station { }
+	internal class RailwayStation : Station { }
 }

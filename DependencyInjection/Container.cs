@@ -17,6 +17,10 @@
 		public void Register<TContract, T>(T instance)
 			where T : class, TContract
 		{
+			if (instance == null)
+			{
+				throw new ArgumentNullException(nameof(instance));
+			}
 			lock (_registry)
 			{
 				_registry.Add(typeof(TContract), (Func<Container, TContract>)(container => instance));
@@ -30,6 +34,10 @@
 		/// <param name="factory">Фабрика.</param>
 		public void Register<TContract>(Func<Container, TContract> factory)
 		{
+			if (factory == null)
+			{
+				throw new ArgumentNullException(nameof(factory));
+			}
 			lock (_registry)
 			{
 				_registry.Add(typeof(TContract), factory);
@@ -43,6 +51,10 @@
 		/// <returns>Экземпляр.</returns>
 		private object Resolve(Type contract)
 		{
+			if (contract == null)
+			{
+				throw new ArgumentNullException(nameof(contract));
+			}
 			lock (_registry)
 			{
 				return _registry[contract].DynamicInvoke(this);

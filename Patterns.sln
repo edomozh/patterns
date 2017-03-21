@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{5F06869A-8914-4640-A851-7F51EAE8B28F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionOfControl", "InversionOfControl\InversionOfControl.csproj", "{7D645037-65C7-4911-874F-C39C0EF3051C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{40D6EB20-4D7B-44AC-9641-0CE5D1461B24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{1D8B9A8B-5852-4F94-AB20-C9DD10007E6B}"
@@ -45,10 +43,6 @@ Global
 		{5F06869A-8914-4640-A851-7F51EAE8B28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F06869A-8914-4640-A851-7F51EAE8B28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F06869A-8914-4640-A851-7F51EAE8B28F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D645037-65C7-4911-874F-C39C0EF3051C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D645037-65C7-4911-874F-C39C0EF3051C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D645037-65C7-4911-874F-C39C0EF3051C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D645037-65C7-4911-874F-C39C0EF3051C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40D6EB20-4D7B-44AC-9641-0CE5D1461B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{40D6EB20-4D7B-44AC-9641-0CE5D1461B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D6EB20-4D7B-44AC-9641-0CE5D1461B24}.Release|Any CPU.ActiveCfg = Release|Any CPU

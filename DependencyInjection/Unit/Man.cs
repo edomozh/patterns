@@ -1,5 +1,7 @@
 ﻿namespace DependencyInjection
 {
+	using System;
+
 	/// <summary>
 	/// Человек.
 	/// </summary>
@@ -22,6 +24,14 @@
 		/// <param name="city">Начальное положение.</param>
 		internal Man(string name, City city)
 		{
+			if (name == null)
+			{
+				throw new ArgumentNullException(nameof(name));
+			}
+			if (city == null)
+			{
+				throw new ArgumentNullException(nameof(city));
+			}
 			City = city;
 			Name = name;
 		}

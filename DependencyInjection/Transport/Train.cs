@@ -14,6 +14,14 @@
 		/// <param name="city">Куда.</param>
 		public void Carry(IHuman human, City city)
 		{
+			if (human == null)
+			{
+				throw new ArgumentNullException(nameof(human));
+			}
+			if (city == null)
+			{
+				throw new ArgumentNullException(nameof(city));
+			}
 			Console.WriteLine("Почухали");
 			human.City = city;
 		}

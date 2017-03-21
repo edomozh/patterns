@@ -9,9 +9,9 @@
 		/// Сделать билет.
 		/// </summary>
 		/// <param name="who">На кого.</param>
-		/// <param name="where">Куда.</param>
-		/// <param name="con">Контейнер.</param>
+		/// <param name="cityName">Куда.</param>
+		/// <param name="requiredTransport">Требование типа транспорта.</param>
 		/// <returns>Билет.</returns>
-		ITicket Buy(IHuman who, City where, Container con);
+		ITicket Buy(IHuman who, string cityName, string requiredTransport);
 	}
 }

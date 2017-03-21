@@ -1,6 +1,7 @@
 ﻿namespace DependencyInjection
 {
 	using System;
+	using System.CodeDom;
 	using System.Linq;
 
 	/// <summary>
@@ -8,44 +9,50 @@
 	/// </summary>
 	internal class TicketWindow : ITicketFactory
 	{
+		private readonly ICityMap _cityMap;
+
+		public TicketWindow(ICityMap cityMap)
+		{
+			_cityMap = cityMap;
+		}
+
 		/// <summary>
 		/// Купить билет.
 		/// </summary>
 		/// <param name="who">Кто.</param>
-		/// <param name="where">Куда.</param>
-		/// <param name="container">Контейнер.</param>
-		/// <returns></returns>
-		public ITicket Buy(IHuman who, City where, Container container)
+		/// <param name="cityName">Город.</param>
+		/// <param name="requiredTransport">Требование типа транспорта.</param>
+		/// <returns>Билет.</returns>
+		public ITicket Buy(IHuman who, string cityName, string requiredTransport)
 		{
 			if (who == null)
 			{
-				throw new NullReferenceException(nameof(who));
+				throw new ArgumentNullException(nameof(who));
 			}
-			if (where == null)
+			if (cityName == null)
 			{
-				throw new NullReferenceException(nameof(where));
+				throw new ArgumentNullException(nameof(cityName));
 			}
-			if (container == null)
+			if (requiredTransport == null)
 			{
-				throw new NullReferenceException(nameof(container));
+				throw new ArgumentNullException(nameof(requiredTransport));
 			}
 
-			if (who.City.ArrivalPoints.OfType<Airport>().Count(p => true) > 0 &&
-				where.ArrivalPoints.OfType<Airport>().Count(p => true) > 0)
+			var where = _cityMap.Find(cityName);
+			if (where == null)
 			{
-				return new Ticket<Airplane>(who, where, container);
+				throw new NullReferenceException($"Пункт назначения '{cityName}' не найден.");
 			}
-			if (who.City.ArrivalPoints.OfType<Port>().Count(p => true) > 0 &&
-				where.ArrivalPoints.OfType<Port>().Count(p => true) > 0)
+
+			var route = _cityMap.GetRoute(who.City, where, t => t.GetType().Name == requiredTransport);
+			if (route == null)
 			{
-				return new Ticket<Ship>(who, where, container);
+				throw new NullReferenceException($"Маршрута из {who.City.Name} в {where.Name} на транспорте '{requiredTransport}' не существует.");
 			}
-			if (who.City.ArrivalPoints.OfType<RailwaySstation>().Count(p => true) > 0 &&
-				where.ArrivalPoints.OfType<RailwaySstation>().Count(p => true) > 0)
-			{
-				return new Ticket<Train>(who, where, container);
-			}
-			return new Ticket<Bus>(who, where, container);
+
+			return new Ticket<ITransport>(who, where, route.Item3);
+
 		}
+
 	}
 }

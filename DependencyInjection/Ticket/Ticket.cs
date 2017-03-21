@@ -1,5 +1,7 @@
 ﻿namespace DependencyInjection
 {
+	using System;
+
 	/// <summary>
 	/// Билет.
 	/// </summary>
@@ -27,12 +29,24 @@
 		/// </summary>
 		/// <param name="who">На кого.</param>
 		/// <param name="to">Куда.</param>
-		/// <param name="container">Контейнер для получения фабрики транспорта.</param>
-		public Ticket(IHuman who, City to, Container container)
+		/// <param name="transport">Транспорт.</param>
+		public Ticket(IHuman who, City to, TTRansport transport)
 		{
+			if (who == null)
+			{
+				throw new ArgumentNullException(nameof(who));
+			}
+			if (to == null)
+			{
+				throw new ArgumentNullException(nameof(to));
+			}
+			if (transport == null)
+			{
+				throw new ArgumentNullException(nameof(transport));
+			}
 			Human = who;
 			To = to;
-			Transport = container.Resolve<ITransportFactory>().Supply(typeof(TTRansport));
+			Transport = transport;
 		}
 
 		/// <summary>

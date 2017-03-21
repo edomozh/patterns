@@ -54,16 +54,14 @@
     <Compile Include="Environment\ICityMap.cs" />
     <Compile Include="Environment\CommonCityMap.cs" />
     <Compile Include="Environment\Port.cs" />
-    <Compile Include="Environment\RailwaySstation.cs" />
+    <Compile Include="Environment\RailwayStation.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Ticket\Ticket.cs" />
-    <Compile Include="Transport\ITransportFactory.cs" />
     <Compile Include="Unit\IHuman.cs" />
     <Compile Include="Unit\Man.cs" />
     <Compile Include="Ticket\ITicket.cs" />
     <Compile Include="Ticket\ITicketFactory.cs" />
     <Compile Include="Ticket\TicketWindow.cs" />
-    <Compile Include="Transport\Сamp.cs" />
     <Compile Include="Transport\Airplane.cs" />
     <Compile Include="Transport\Train.cs" />
     <Compile Include="Transport\Ship.cs" />

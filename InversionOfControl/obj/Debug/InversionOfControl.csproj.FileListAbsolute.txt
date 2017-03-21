@@ -1,1 +1,0 @@
-D:\Patterns\InversionOfControl\bin\Debug\InversionOfControl.exe.config

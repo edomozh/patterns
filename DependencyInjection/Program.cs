@@ -11,78 +11,86 @@
 		/// </summary>
 		private static Container Container { get; } = new Container();
 
-		/// <summary>
-		/// Карта городов для путешествий.
-		/// </summary>
-		private static CommonCityMap CommonCityMap { get; } = new CommonCityMap(
-			new List<City>
-			{
-				new City("Нижний Новгород",
-					new List<Station>
+		public static void Main()
+		{
+			var map = new CommonCityMap(
+				new List<City>
 					{
-						new Airport(),
-						new Port()
-					}
-				),
-				new City("Москва",
-					new List<Station>
-					{
-						new Airport(),
-					}
-				),
-				new City("Казань",
-					new List<Station>
-					{
-						new RailwaySstation(),
-						new RailwaySstation(),
-						new Port()
-					}
-				)
-			}
-		);
-
-		/// <summary>
-		/// Фабрика билетов.
-		/// </summary>
-		private static TicketWindow TicketWindow { get; } = new TicketWindow();
-
-		/// <summary>
-		/// Фабрика транспорта.
-		/// </summary>
-		private static Сamp Сamp { get; } = new Сamp(
-				new List<ITransport>
-				{
-					new Ship(),
-					new Bus(),
-					new Airplane(),
-					new Train()
+					new City("Нижний Новгород",
+						new List<Station>
+						{
+							new Airport(),
+							new Port()
+						}
+					),
+					new City("Москва",
+						new List<Station>
+						{
+							new Airport(),
+						}
+					),
+					new City("Казань",
+						new List<Station>
+						{
+							new RailwayStation(),
+							new Port()
+						}
+					)
 				}
 			);
 
-		public static void Main()
-		{
 			// Регистрация служб.
-			Container.Register<ICityMap, CommonCityMap>(CommonCityMap);
-			Container.Register<ITicketFactory, TicketWindow>(TicketWindow);
-			Container.Register<ITransportFactory, Сamp>(Сamp);
-			// Люди все одинаковы.
-			Container.Register<IHuman>(m => new Man("Иван Иванов", Container.Resolve<ICityMap>().Cities.First(c => c.Name == "Нижний Новгород")));
+			Console.WriteLine("Регистрируем службы.");
+			Container.Register<ICityMap, CommonCityMap>(map);
+			Container.Register<ITicketFactory>(container => new TicketWindow(container.Resolve<ICityMap>()));
 
-			// Берем экземпляр человека.
-			var man = Container.Resolve<IHuman>();
-			Console.WriteLine($"{man.Name} в городе {man.City.Name}.");
+			do
+			{
+				try
+				{
+					Console.Clear();
+					Console.WriteLine("Для создания персонажа:");
+					Console.WriteLine("Введите название города:");
+					foreach (var i in Container.Resolve<ICityMap>().Cities)
+					{
+						Console.WriteLine($"\t{i.Name}");
+					}
+					var cityName = Console.ReadLine();
 
-			// Берем для него билетик.
-			var ticket = Container.Resolve<ITicketFactory>().Buy(
-				man,
-				Container.Resolve<ICityMap>().Cities.First(c => c.Name == "Казань"),
-				Container);
+					// Берем город.
+					var city = Container.Resolve<ICityMap>().Cities.FirstOrDefault(c => c.Name == cityName);
+					if (city == null)
+					{
+						throw new NullReferenceException($"Города '{cityName}' не найдено.");
+					}
 
-			// Используем билетик.
-			ticket.Use();
-			Console.WriteLine($"{man.Name} в городе {man.City.Name}.");
+					Console.WriteLine("\r\nВведите имя человека.");
+					var manName = Console.ReadLine();
 
-			Console.ReadLine();
+					// Создаем человека в городе.
+					var man = new Man(manName, city);
+					Console.WriteLine($"\r\n{man.Name} в городе {man.City.Name}.");
+
+					Console.WriteLine("Для покупки билета:");
+					Console.WriteLine("Введите название транспорта (Airplane, Train, Bus, Ship):");
+					var transport = Console.ReadLine();
+
+					Console.WriteLine("\r\nВведите пункт назначения:");
+					var pointName = Console.ReadLine();
+
+					// Берем для него билетик.
+					var ticket = Container.Resolve<ITicketFactory>().Buy(man, pointName, transport);
+
+					// Используем билетик.
+					ticket.Use();
+					Console.WriteLine($"\r\n{man.Name} в городе {man.City.Name}.");
+
+				}
+				catch (Exception e)
+				{
+					Console.WriteLine($"\r\n{e.Message}");
+				}
+			} while (Console.ReadLine() != "exit");
 		}
 	}
 }

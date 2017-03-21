@@ -1,5 +1,6 @@
 ﻿namespace DependencyInjection
 {
+	using System;
 	using System.Collections.Generic;
 
 	/// <summary>
@@ -24,6 +25,14 @@
 		/// <param name="arrivalPoints">Станции в городе.</param>
 		public City(string name, ICollection<Station> arrivalPoints)
 		{
+			if (name == null)
+			{
+				throw new ArgumentNullException(nameof(name));
+			}
+			if (arrivalPoints == null)
+			{
+				throw new ArgumentNullException(nameof(arrivalPoints));
+			}
 			ArrivalPoints = arrivalPoints;
 			Name = name;
 		}
