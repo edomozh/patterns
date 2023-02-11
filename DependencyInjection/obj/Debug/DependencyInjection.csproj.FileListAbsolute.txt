@@ -10,3 +10,11 @@ D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\ob
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\bin\Debug\DependencyInjection.exe
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\bin\Debug\DependencyInjection.pdb
 D:\Norbit.CRM.CareerGoal\e.domozhirov\06.03.2017\Patterns\DependencyInjection\obj\Debug\DependencyInjection.csprojResolveAssemblyReference.cache
+C:\Repositories\patterns\DependencyInjection\bin\Debug\DependencyInjection.exe.config
+C:\Repositories\patterns\DependencyInjection\bin\Debug\DependencyInjection.exe
+C:\Repositories\patterns\DependencyInjection\bin\Debug\DependencyInjection.pdb
+C:\Repositories\patterns\DependencyInjection\obj\Debug\DependencyInjection.csproj.AssemblyReference.cache
+C:\Repositories\patterns\DependencyInjection\obj\Debug\DependencyInjection.csproj.SuggestedBindingRedirects.cache
+C:\Repositories\patterns\DependencyInjection\obj\Debug\DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Repositories\patterns\DependencyInjection\obj\Debug\DependencyInjection.exe
+C:\Repositories\patterns\DependencyInjection\obj\Debug\DependencyInjection.pdb

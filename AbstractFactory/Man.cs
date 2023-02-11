@@ -30,7 +30,7 @@
 			}
 
 			_liquid = manFactory.CreateDrink();
-			_tobacco = manFactory.CreateShugar();
+			_tobacco = manFactory.CreateSmokableThing();
 			Tonus = tonus;
 		}
 

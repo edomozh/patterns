@@ -9,7 +9,7 @@
 		/// Метод создания объекта курева.
 		/// </summary>
 		/// <returns>Экземпляр ISmokeable</returns>
-		ISmokeable CreateShugar();
+		ISmokeable CreateSmokableThing();
 
 		/// <summary>
 		/// Метод создания объекта напитка.

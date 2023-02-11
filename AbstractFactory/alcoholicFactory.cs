@@ -9,7 +9,7 @@
 		/// Метод создания экземпляра класса курения.
 		/// </summary>
 		/// <returns>Экземпляр класса курева.</returns>
-		public ISmokeable CreateShugar()
+		public ISmokeable CreateSmokableThing()
 		{
 			return new Vape();
 		}
