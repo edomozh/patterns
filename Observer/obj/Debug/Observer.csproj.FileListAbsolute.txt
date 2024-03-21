@@ -1,6 +1,0 @@
-D:\Patterns\Observer\bin\Debug\Observer.exe.config
-D:\Patterns\Observer\bin\Debug\Observer.exe
-D:\Patterns\Observer\bin\Debug\Observer.pdb
-D:\Patterns\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
-D:\Patterns\Observer\obj\Debug\Observer.exe
-D:\Patterns\Observer\obj\Debug\Observer.pdb

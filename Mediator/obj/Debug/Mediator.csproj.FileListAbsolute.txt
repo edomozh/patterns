@@ -1,6 +1,0 @@
-D:\Patterns\Mediator\bin\Debug\Mediator.exe.config
-D:\Patterns\Mediator\obj\Debug\Mediator.csprojResolveAssemblyReference.cache
-D:\Patterns\Mediator\bin\Debug\Mediator.exe
-D:\Patterns\Mediator\bin\Debug\Mediator.pdb
-D:\Patterns\Mediator\obj\Debug\Mediator.exe
-D:\Patterns\Mediator\obj\Debug\Mediator.pdb
